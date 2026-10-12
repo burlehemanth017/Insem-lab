@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student portfolio showcasing skills, projects and contact details">
+    <title>Student Portfolio | Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">MyPortfolio</a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hello, I'm <span>Your Name</span></h1>
+                <h2>Student & Aspiring Web Developer</h2>
+                <p>
+                    I am a student passionate about technology,
+                    programming, and creating attractive websites.
+                </p>
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-circle">👨‍🎓</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am a college student interested in web development
+                and software technologies. I enjoy learning new skills,
+                solving problems, and developing projects that help
+                me gain practical experience.
+            </p>
+            <div class="about-info">
+                <p><strong>Name:</strong> Your Name</p>
+                <p><strong>Education:</strong> B.Tech / Degree Student</p>
+                <p><strong>Location:</strong> Andhra Pradesh, India</p>
+                <p><strong>Career Goal:</strong> Software Developer</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-description">
+                Technologies and tools I am learning.
+            </p>
+
+            <div class="skills-container">
+                <article class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Creating structured web pages using semantic elements.</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Designing responsive layouts, colors, and animations.</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactive features to websites.</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Python</h3>
+                    <p>Learning programming logic and problem-solving.</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="projects-container">
+                <article class="project-card">
+                    <div class="project-icon">🌐</div>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A responsive personal website built using HTML,
+                        CSS, and JavaScript.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">📝</div>
+                    <h3>To-Do List</h3>
+                    <p>
+                        A task management application to add, complete,
+                        and remove daily tasks.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🎓</div>
+                    <h3>Student Management</h3>
+                    <p>
+                        A simple student record interface for displaying
+                        student names, roll numbers, and marks.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-description">
+                Have a project idea or opportunity? Send me a message!
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>📧 Email: yourname@example.com</p>
+                    <p>📱 Phone: +91 98765 43210</p>
+                    <p>📍 Location: Andhra Pradesh, India</p>
+                </div>
+
+                <form id="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message"
+                              required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
